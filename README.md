@@ -1,68 +1,163 @@
-# Caesar_Cipher
-A sleek, modern web application for encrypting and decrypting messages using the classic Caesar Cipher algorithm. This project is a simple yet educational tool for understanding one of the oldest and most basic forms of cryptography.
+# 🚀 Caesar Cipher Tool
 
-✨ Features:
-
-1. Encrypt Text: Secure your messages by shifting each letter forward by a specified key.
-
-2. Decrypt Text: Easily decode encrypted messages with the correct shift key.
-
-3. Intuitive Interface: A clean and stylish user interface, built with HTML, Tailwind CSS, and plain JavaScript, makes it easy to use for anyone.
-
-4. Dynamic and Responsive: The application is fully responsive and looks great on both desktop and mobile devices.
-
-5. Copy to Clipboard: One-click functionality to copy the resulting text for easy sharing.
-
-🚀 How to Use:
-
-1. Simply open the index.html file in your web browser to start using the application. No installation or setup is required!
-
-2. Enter your message into the "Your Message" text area.
-
-3. Choose a shift key (a number between 1 and 25). The default is 3, which is the traditional Caesar cipher key.
-
-4. Click the Encrypt button to encode your message or the Decrypt button to decode an encrypted one.
-
-5. The result will appear in the "Result" text area.
-
-6. Click the Copy button to copy the encrypted or decrypted text to your clipboard.
-
-💻 Technologies Used:
-
-1. HTML5: For the core structure of the web page.
-
-2. CSS3: Custom styles and a beautiful gradient background.
-
-3. Tailwind CSS: A utility-first CSS framework for fast and responsive styling.
-
-4. JavaScript (ES6+): Powers the encryption, decryption, and all interactive features.
-
-5. Google Fonts (Poppins): For a modern and readable typography.
-
-🧠 How the Cipher Works:
-
-The Caesar cipher is a type of substitution cipher where each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on.
-
-The formula for encryption is:
-E 
-n
-​
- (x)=(x+n)(mod26)
-
-And for decryption:
-D 
-n
-​
- (x)=(x−n)(mod26)
-
-where x is the position of the letter in the alphabet (e.g., A=0, B=1, ...), and n is the shift key.
-
-<img width="1556" height="883" alt="Screenshot 2025-08-18 095739" src="https://github.com/user-attachments/assets/aa46673e-f848-4b53-9ab1-2910b0552c76" />
+> Encrypt and decrypt text using a classic shift cipher with a clean interactive UI.
 
 
-<img width="1134" height="882" alt="Screenshot 2025-08-18 095826" src="https://github.com/user-attachments/assets/4b57376c-cc08-41a9-b77e-53f2a438469c" />
+---
+
+# 📌 Overview
+
+This project is a simple web-based implementation of the Caesar Cipher, a classic encryption technique where each character in the text is shifted by a fixed number of positions.
+
+I built this to strengthen my understanding of **basic cryptography concepts, string manipulation, and frontend interaction**. It provides an intuitive UI where users can input text, choose a shift key, and instantly encrypt or decrypt messages.
+
+It’s ideal for beginners exploring **encryption basics and JavaScript-based UI logic**.
+
+---
+
+# 🎥 Demo / Screenshots
+
+## 🔹 Main Interface
+
+<img width="1556" height="883" alt="Screenshot 2025-08-18 095739" src="https://github.com/user-attachments/assets/4ae81900-12ed-4c8e-a2e7-4f11c5d6c0cc" />
 
 
-<img width="1065" height="882" alt="Screenshot 2025-08-18 095856" src="https://github.com/user-attachments/assets/0758fcc4-fd9b-4566-aa66-73b7c8121e44" />
+## 🔹 Encryption Example
+
+<img width="1134" height="882" alt="Screenshot 2025-08-18 095826" src="https://github.com/user-attachments/assets/abe42ab8-0384-4eb0-9da5-8a1a7483cfb3" />
 
 
+## 🔹 Decryption Example
+
+<img width="1065" height="882" alt="Screenshot 2025-08-18 095856" src="https://github.com/user-attachments/assets/d5d9e6a9-750d-48b2-995b-203b926e60ff" />
+
+
+---
+
+# ✨ Features
+
+## Core Features
+
+* Encrypt text using Caesar Cipher
+* Decrypt encrypted text
+* Adjustable shift key (1–25)
+* Instant output display
+* Copy-to-clipboard functionality
+
+## Advanced Features
+
+* Handles uppercase and lowercase characters
+* Preserves non-alphabet characters (spaces, punctuation)
+* Clean responsive UI
+* Modular JavaScript logic
+
+---
+
+# 🏗 Architecture
+
+```mermaid
+graph TD
+
+User --> UI
+UI --> JS_Logic
+JS_Logic --> Encrypt_Function
+JS_Logic --> Decrypt_Function
+Encrypt_Function --> Output
+Decrypt_Function --> Output
+```
+
+---
+
+# 🔄 System Workflow
+
+```mermaid
+flowchart TD
+
+User_Input --> Enter_Text
+Enter_Text --> Select_Key
+Select_Key --> Choose_Action
+Choose_Action --> Encrypt
+Choose_Action --> Decrypt
+Encrypt --> Display_Result
+Decrypt --> Display_Result
+Display_Result --> Copy_Option
+```
+
+---
+
+# 🛠 Tech Stack
+
+| Layer    | Technology                       |
+| -------- | -------------------------------- |
+| Frontend | HTML, CSS, JavaScript            |
+| Logic    | JavaScript (String manipulation) |
+
+---
+
+# 📂 Project Structure
+
+```
+Caesar_Cipher/
+
+├── index.html
+├── style.css
+├── script.js
+├── docs/
+│   └── screenshots/
+└── README.md
+```
+
+---
+
+# ⚙️ Installation
+
+### 1 Clone the repository
+
+```
+git clone https://github.com/harsh-verma-2004/Caesar_Cipher.git
+```
+
+### 2 Navigate to project
+
+```
+cd Caesar_Cipher
+```
+
+### 3 Run the project
+
+Just open the file:
+
+```
+index.html
+```
+
+---
+
+# 📊 Performance Considerations
+
+* Lightweight frontend application
+* No backend dependency → instant response
+* Efficient string manipulation logic
+* Runs entirely in browser
+
+---
+
+# 🗺 Roadmap
+
+* Add support for other ciphers (Vigenère, AES basics)
+* Improve UI animations
+* Add dark/light theme toggle
+* Deploy as a web app
+
+---
+
+# 👨‍💻 Author
+
+Harsh Verma
+GitHub: [https://github.com/harsh-verma-2004](https://github.com/harsh-verma-2004)
+
+---
+
+# ⭐ Support
+
+If you like this project, consider giving it a star ⭐
